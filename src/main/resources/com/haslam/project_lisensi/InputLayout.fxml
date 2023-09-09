@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Text?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.haslam.project_lisensi.LicenseActiveController"
+            prefHeight="200.0" prefWidth="300.0">
+
+
+    <GridPane
+              xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10"
+              styleClass="root">
+
+        <padding><Insets top="25" right="25" bottom="25" left="25"/></padding>
+
+        <Label fx:id="label"
+               GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+        <Label text="License :"
+               GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+
+        <TextField fx:id="textField"
+                GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+        <HBox spacing="10" alignment="bottom_right"
+              GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <Button text="submit"
+                    onAction="#tes"
+                    fx:id="button"/>
+        </HBox>
+
+        <Text fx:id="statusInput"
+              GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+
+    </GridPane>
+
+</AnchorPane>
